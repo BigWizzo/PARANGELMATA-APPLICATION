@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
 import './App.css';
 
 function App() {
+  const [nation, setNation] = useState('South Africa');
   const data = {
     labels: ['Red', 'Blue', 'Yellow'],
     datasets: [
@@ -16,9 +17,14 @@ function App() {
     ],
   };
   console.log(data);
+
+  const Loading = true;
+
   return (
     <div className="App">
       <h1>Parangelmata</h1>
+      <input type="text" onChange={(e) => setNation(e.target.value)} />
+      {Loading && <p>Loading...</p>}
       <Line data={data} />
     </div>
   );
