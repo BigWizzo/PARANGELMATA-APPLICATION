@@ -42,6 +42,10 @@ export const getData = ({ nation }) => {
         type: 'SUCCESS_LIVESTOCK',
         payload: { data, labels, label },
       });
-    } catch (error) {}
+    } catch (error) {
+      dispatch({
+        type: 'REJECTED_LIVESTOCK',
+      });
+    }
   };
 };

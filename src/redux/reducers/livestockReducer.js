@@ -1,15 +1,17 @@
 const initialState = {
   loading: false,
-  labels: [],
-  datasets: [
-    {
-      label: '',
-      data: [],
-      backgroundColor: ['rgba(255, 99, 132, 0.2)'],
-      borderColor: ['rgba(255, 99, 132, 1)'],
-      borderWidth: 1,
-    },
-  ],
+  data: {
+    labels: [],
+    datasets: [
+      {
+        label: '',
+        data: [],
+        backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+        borderColor: ['rgba(255, 99, 132, 1)'],
+        borderWidth: 1,
+      },
+    ],
+  },
 };
 
 const livestockReducer = (state = initialState, action) => {
@@ -29,16 +31,19 @@ const livestockReducer = (state = initialState, action) => {
     case 'SUCCESS_LIVESTOCK':
       return {
         ...state,
-        labels: [],
-        datasets: [
-          {
-            label: '',
-            data: [],
-            backgroundColor: ['rgba(255, 99, 132, 0.2)'],
-            borderColor: ['rgba(255, 99, 132, 1)'],
-            borderWidth: 1,
-          },
-        ],
+        loading: false,
+        data: {
+          labels: payload.labels,
+          datasets: [
+            {
+              label: payload.label,
+              data: payload.data,
+              backgroundColor: ['rgba(255, 99, 132, 0.2)'],
+              borderColor: ['rgba(255, 99, 132, 1)'],
+              borderWidth: 1,
+            },
+          ],
+        },
       };
     default:
       break;
