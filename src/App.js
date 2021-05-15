@@ -7,7 +7,7 @@ import { getData } from './redux/actions/livestockActions';
 function App() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.livestock);
-  const [nation, setNation] = useState('South Africa');
+  const [nat, setNat] = useState('South Africa');
   const data = {
     labels: ['Red', 'Blue', 'Yellow'],
     datasets: [
@@ -21,9 +21,12 @@ function App() {
     ],
   };
   const fetchData = () => {
-    dispatch(getData());
+    dispatch(
+      getData({
+        nation: nat,
+      }),
+    );
   };
-  console.log(data);
 
   return (
     <div className="App">
@@ -33,7 +36,7 @@ function App() {
           Fetch
         </button>
       </div>
-      <input type="text" onChange={(e) => setNation(e.target.value)} />
+      <input type="text" onChange={(e) => setNat(e.target.value)} />
       {state.loading && <p>Loading...</p>}
       <div className="chart-wrapper">
         <Line data={data} />
