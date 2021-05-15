@@ -16,14 +16,10 @@ export const getData = ({ nation }) => {
       response.data.map((country) => {
         const currentCountry = country['Country Name'];
         if (currentCountry === nation) {
-          // console.log(currentCountry);
-          // console.log(`this ${index} index`);
           Object.keys(country).forEach((key) => {
-            // console.log(`this ${key} key`);
             myLabels.push(key);
           });
           Object.values(country).forEach((value) => {
-            // console.log(`this ${value} key`);
             myData.push(value);
           });
           countryLabel.push(currentCountry);
@@ -33,14 +29,17 @@ export const getData = ({ nation }) => {
       const data = myData.slice(41, 61);
       const labels = myLabels.slice(41, 61);
       const label = countryLabel.toString();
+      const indCode = myData.slice(64).toString();
+      const indName = myData.slice(63).toString();
+      const natCode = myData.slice(62).toString();
 
-      console.log(data);
-      console.log(labels);
-      console.log(label);
+      console.log(indCode);
+      console.log(indName);
+      console.log(natCode);
 
       dispatch({
         type: 'SUCCESS_LIVESTOCK',
-        payload: { data, labels, label },
+        payload: { data, labels, label, indCode, indName, natCode },
       });
     } catch (error) {
       dispatch({

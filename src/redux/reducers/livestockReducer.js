@@ -12,6 +12,11 @@ const initialState = {
       },
     ],
   },
+  desc: {
+    indicatorCode: '',
+    indicatorName: '',
+    countryCode: '',
+  },
 };
 
 const livestockReducer = (state = initialState, action) => {
@@ -43,6 +48,11 @@ const livestockReducer = (state = initialState, action) => {
               borderWidth: 1,
             },
           ],
+        },
+        desc: {
+          indicatorCode: payload.indCode,
+          indicatorName: payload.indName,
+          countryCode: payload.natCode,
         },
       };
     default:

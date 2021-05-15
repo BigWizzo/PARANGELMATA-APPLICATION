@@ -29,6 +29,11 @@ function App() {
           Submit
         </button>
       </div>
+      <div className="indi-code">
+        <p>{state.desc.indicatorCode}</p>
+        <p>{state.desc.indicatorName}</p>
+        <p>{state.desc.countryCode}</p>
+      </div>
       <div>
         {state.loading && <p>Loading...</p>}
         {state.data.labels.length > 0 ? (
