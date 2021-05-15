@@ -13,7 +13,7 @@ export const getData = ({ nation }) => {
       const myData = [];
       const countryLabel = [];
 
-      response.data.map((country, index) => {
+      response.data.map((country) => {
         const currentCountry = country['Country Name'];
         if (currentCountry === nation) {
           // console.log(currentCountry);
