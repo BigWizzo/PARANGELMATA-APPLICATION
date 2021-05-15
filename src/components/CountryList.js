@@ -29,7 +29,7 @@ const CountryList = () => {
           Submit
         </button>
       </div>
-      <div className="indi-code">
+      <div className="conunty-desc">
         <CountryDescription desc={state.desc} />
       </div>
       <div>
@@ -39,7 +39,9 @@ const CountryList = () => {
             <Bar data={state.data} />
           </div>
         ) : (
-          'Please enter The country and click on submit'
+          <div className="empty">
+            <h4>'Please enter The country and click on submit'</h4>
+          </div>
         )}
       </div>
     </div>
