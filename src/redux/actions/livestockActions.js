@@ -12,17 +12,24 @@ export const getData = ({ nation }) => {
       const labels = [];
       const data = [];
       const label = '';
-      // for (let i = 0; i < response.data.length; i++) {
-      // console.log(response.data[i]['Country Name']);
-      // }
 
       response.data.map((country, index) => {
         const currentCountry = country['Country Name'];
         if (currentCountry === nation) {
-          console.log(currentCountry);
-          console.log(`this ${index} is`);
+          // console.log(currentCountry);
+          // console.log(`this ${index} index`);
+          Object.keys(country).forEach((key) => {
+            // console.log(`this ${key} key`);
+            labels.push(key);
+          });
+          Object.values(country).forEach((value) => {
+            // console.log(`this ${value} key`);
+            data.push(value);
+          });
         }
       });
+      // console.log(labels);
+      console.log(data);
     } catch (error) {}
   };
 };
