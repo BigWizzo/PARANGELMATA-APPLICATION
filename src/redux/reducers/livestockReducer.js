@@ -3,7 +3,7 @@ const initialState = {
   labels: [],
   datasets: [
     {
-      label: '# of Votes',
+      label: '',
       data: [],
       backgroundColor: ['rgba(255, 99, 132, 0.2)'],
       borderColor: ['rgba(255, 99, 132, 1)'],
@@ -32,7 +32,7 @@ const livestockReducer = (state = initialState, action) => {
         labels: [],
         datasets: [
           {
-            label: '# of Votes',
+            label: '',
             data: [],
             backgroundColor: ['rgba(255, 99, 132, 0.2)'],
             borderColor: ['rgba(255, 99, 132, 1)'],

@@ -9,9 +9,9 @@ export const getData = ({ nation }) => {
         'https://anmlfarm.com/data/countrydata.json',
       );
 
-      const labels = [];
-      const data = [];
-      const label = [];
+      const myLabels = [];
+      const myData = [];
+      const countryLabel = [];
 
       response.data.map((country, index) => {
         const currentCountry = country['Country Name'];
@@ -20,17 +20,28 @@ export const getData = ({ nation }) => {
           // console.log(`this ${index} index`);
           Object.keys(country).forEach((key) => {
             // console.log(`this ${key} key`);
-            labels.push('key');
+            myLabels.push(key);
           });
           Object.values(country).forEach((value) => {
             // console.log(`this ${value} key`);
-            data.push('value');
+            myData.push(value);
           });
-          label.push(currentCountry);
+          countryLabel.push(currentCountry);
         }
       });
-      console.log(label.toString());
+
+      const data = myData.slice(41, 61);
+      const labels = myLabels.slice(41, 61);
+      const label = countryLabel.toString();
+
       console.log(data);
+      console.log(labels);
+      console.log(label);
+
+      dispatch({
+        type: 'SUCCESS_LIVESTOCK',
+        payload: { data, labels, label },
+      });
     } catch (error) {}
   };
 };
