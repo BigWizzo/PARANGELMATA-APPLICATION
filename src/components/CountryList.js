@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import { useDispatch, useSelector } from 'react-redux';
 import { getData } from '../redux/actions/livestockActions';
+import CountryDescription from './CountryDescription';
 
 const CountryList = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,7 @@ const CountryList = () => {
   };
 
   return (
-    <div className="App">
+    <div className="main">
       <h1>Parangelmata</h1>
       <input
         type="text"
@@ -29,9 +30,7 @@ const CountryList = () => {
         </button>
       </div>
       <div className="indi-code">
-        <p>{state.desc.indicatorCode}</p>
-        <p>{state.desc.indicatorName}</p>
-        <p>{state.desc.countryCode}</p>
+        <CountryDescription desc={state.desc} />
       </div>
       <div>
         {state.loading && <p>Loading...</p>}
