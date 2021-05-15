@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import { useDispatch, useSelector } from 'react-redux';
 import { getData } from '../redux/actions/livestockActions';
 import CountryDescription from './CountryDescription';
+import CountryForm from './CountryForm';
 
 const CountryList = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.livestock);
-  const [nat, setNat] = useState('');
-  const fetchData = () => {
+  const fetchData = (country) => {
+    console.log(country);
     dispatch(
       getData({
-        nation: nat,
+        nation: country.nat,
       }),
     );
   };
@@ -19,16 +19,7 @@ const CountryList = () => {
   return (
     <div className="main">
       <h1>Parangelmata</h1>
-      <input
-        type="text"
-        placeholder="Enter Country"
-        onChange={(e) => setNat(e.target.value)}
-      />
-      <div className="tog">
-        <button type="button" onClick={() => fetchData()}>
-          Submit
-        </button>
-      </div>
+      <CountryForm onSub={fetchData} />
       <div className="conunty-desc">
         <CountryDescription desc={state.desc} />
       </div>
