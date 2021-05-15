@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
+import { useDispatch, useSelector } from 'react-redux';
 import './App.css';
+import { getData } from './redux/actions/livestockActions';
 
 function App() {
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state.livestock);
   const [nation, setNation] = useState('South Africa');
   const data = {
     labels: ['Red', 'Blue', 'Yellow'],
@@ -16,15 +20,21 @@ function App() {
       },
     ],
   };
+  const fetchData = () => {
+    dispatch(getData());
+  };
   console.log(data);
-
-  const loading = true;
 
   return (
     <div className="App">
       <h1>Parangelmata</h1>
+      <div className="tog">
+        <button type="button" onClick={() => fetchData()}>
+          Fetch
+        </button>
+      </div>
       <input type="text" onChange={(e) => setNation(e.target.value)} />
-      {loading && <p>Loading...</p>}
+      {state.loading && <p>Loading...</p>}
       <div className="chart-wrapper">
         <Line data={data} />
       </div>
