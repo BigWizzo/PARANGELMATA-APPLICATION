@@ -29,9 +29,15 @@ function App() {
           Submit
         </button>
       </div>
-      {state.loading && <p>Loading...</p>}
-      <div className="chart-wrapper">
-        <Bar data={state.data} />
+      <div>
+        {state.loading && <p>Loading...</p>}
+        {state.data.labels.length > 0 ? (
+          <div className="chart-wrapper">
+            <Bar data={state.data} />
+          </div>
+        ) : (
+          'Please enter The country and click on submit'
+        )}
       </div>
     </div>
   );
