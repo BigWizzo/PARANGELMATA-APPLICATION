@@ -18,14 +18,16 @@ function App() {
   };
   console.log(data);
 
-  const Loading = true;
+  const loading = true;
 
   return (
     <div className="App">
       <h1>Parangelmata</h1>
       <input type="text" onChange={(e) => setNation(e.target.value)} />
-      {Loading && <p>Loading...</p>}
-      <Line data={data} />
+      {loading && <p>Loading...</p>}
+      <div className="chart-wrapper">
+        <Line data={data} />
+      </div>
     </div>
   );
 }
