@@ -11,7 +11,7 @@ export const getData = ({ nation }) => {
 
       const labels = [];
       const data = [];
-      const label = '';
+      const label = [];
 
       response.data.map((country, index) => {
         const currentCountry = country['Country Name'];
@@ -20,15 +20,16 @@ export const getData = ({ nation }) => {
           // console.log(`this ${index} index`);
           Object.keys(country).forEach((key) => {
             // console.log(`this ${key} key`);
-            labels.push(key);
+            labels.push('key');
           });
           Object.values(country).forEach((value) => {
             // console.log(`this ${value} key`);
-            data.push(value);
+            data.push('value');
           });
+          label.push(currentCountry);
         }
       });
-      // console.log(labels);
+      console.log(label.toString());
       console.log(data);
     } catch (error) {}
   };

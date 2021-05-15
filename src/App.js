@@ -31,12 +31,12 @@ function App() {
   return (
     <div className="App">
       <h1>Parangelmata</h1>
+      <input type="text" onChange={(e) => setNat(e.target.value)} />
       <div className="tog">
         <button type="button" onClick={() => fetchData()}>
-          Fetch
+          Submit
         </button>
       </div>
-      <input type="text" onChange={(e) => setNat(e.target.value)} />
       {state.loading && <p>Loading...</p>}
       <div className="chart-wrapper">
         <Line data={data} />
