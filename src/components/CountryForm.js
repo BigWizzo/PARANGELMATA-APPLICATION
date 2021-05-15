@@ -4,6 +4,9 @@ const CountryForm = ({ onSub }) => {
   const [nat, setNat] = useState('');
   const onSubmit = (e) => {
     e.preventDefault();
+    if (nat) {
+      setNat(nat.charAt(0).toUpperCase() + nat.slice(1));
+    }
 
     if (!nat) {
       alert('Please enter Country Name');
