@@ -8,7 +8,6 @@ const CountryList = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.livestock);
   const fetchData = (country) => {
-    console.log(country);
     dispatch(
       getData({
         nation: country.nat,

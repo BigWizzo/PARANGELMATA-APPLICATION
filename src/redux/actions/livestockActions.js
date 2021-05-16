@@ -30,16 +30,12 @@ export const getData = ({ nation }) => {
       const labels = myLabels.slice(41, 61);
       const label = countryLabel.toString();
       const indCode = myData.slice(64).toString();
-      const indName = myData.slice(63).toString();
-      const natCode = myData.slice(62).toString();
+      const indName = myData.slice(63, 64).toString();
+      const natCode = myData.slice(62, 63).toString();
       const yr1 = myLabels.slice(59, 60).toString();
       const yr2 = myLabels.slice(60, 61).toString();
       const yr1Val = myData.slice(59, 60).toString();
       const yr2Val = myData.slice(60, 61).toString();
-
-      console.log(yr1);
-      console.log(yr2);
-      // console.log(natCode);
 
       const status = () => {
         if (yr1Val === yr2Val) {
@@ -50,8 +46,6 @@ export const getData = ({ nation }) => {
           return 'up';
         }
       };
-
-      console.log(status());
 
       dispatch({
         type: 'SUCCESS_LIVESTOCK',

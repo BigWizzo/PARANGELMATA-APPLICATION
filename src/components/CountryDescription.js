@@ -8,7 +8,6 @@ const CountryDescription = ({ desc, trends }) => {
           <div className="col-md-4">
             <h4 className="card-header">{currentStatus}</h4>
             <div className="card-body">
-              {console.log(label)}
               <p>{yearOne}</p>
               <p>{yearTwo}</p>
             </div>
