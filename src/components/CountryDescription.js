@@ -27,9 +27,25 @@ const CountryDescription = ({ desc, trends }) => {
           <div className="col-md-4 text-center">
             <h4 className="card-header">TRENDS</h4>
             <div className="card-body">
-              <p>{yearOne}</p>
-              <p>{currentStatus.toUpperCase()}</p>
-              <p>{yearTwo}</p>
+              <div>{yearOne}</div>
+              <div className="icon-div">
+                <div className="icon-span">
+                  {yearTwoVal > yearOneVal ? (
+                    <span className="increase">
+                      Increase <i className="far fa-arrow-alt-circle-up"></i>
+                    </span>
+                  ) : yearTwoVal < yearOneVal ? (
+                    <span className="decrease">
+                      Decrease <i className="far fa-arrow-alt-circle-down"></i>
+                    </span>
+                  ) : (
+                    <span className="no-change">
+                      No Change <i className="fas fa-arrows-alt-h"></i>
+                    </span>
+                  )}
+                </div>
+              </div>
+              <div>{yearTwo}</div>
             </div>
           </div>
         </div>
