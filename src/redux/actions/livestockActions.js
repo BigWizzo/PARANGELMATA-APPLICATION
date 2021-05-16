@@ -32,16 +32,27 @@ export const getData = ({ nation }) => {
       const natCode = myData.slice(62, 63).toString();
       const yr1 = myLabels.slice(59, 60).toString();
       const yr2 = myLabels.slice(60, 61).toString();
-      const yr1Val = myData.slice(59, 60).toString();
-      const yr2Val = myData.slice(60, 61).toString();
+      let yr1Val = parseInt(myData.slice(59, 60));
+      let yr2Val = parseInt(myData.slice(60, 61));
+
+      if (isNaN(yr1Val) === true) {
+        yr1Val = 'no recorded';
+      }
+
+      if (isNaN(yr2Val) === true) {
+        yr2Val = 'no recorded';
+      }
+
+      console.log(yr1Val);
+      console.log(yr2Val);
 
       const status = () => {
         if (yr1Val === yr2Val) {
-          return 'equal';
+          return 'no change';
         } else if (yr1Val < yr2Val) {
-          return 'dropping';
+          return 'a decrease';
         } else {
-          return 'up';
+          return 'an increase';
         }
       };
 

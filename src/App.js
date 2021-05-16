@@ -2,7 +2,7 @@ import CountryList from './components/CountryList';
 
 function App() {
   return (
-    <div className="App text-center text-light">
+    <div className="App text-light">
       <CountryList />
     </div>
   );

@@ -17,13 +17,13 @@ const CountryList = () => {
 
   return (
     <div className="main">
-      <h1 className="py-4">Parangelmata</h1>
+      <h1 className="py-4 text-center">Parangelmata</h1>
       <div className="icon">
         <i className="fas fa-arrows-alt-h"></i>
       </div>
       <CountryForm onSub={fetchData} />
       <div className="content">
-        {state.loading && <p>Loading...</p>}
+        {state.loading && <p className="text-center">Loading...</p>}
         {state.data.labels.length > 0 ? (
           <div className="main-content-wrapper row m-0 p-3">
             <div className="chart-wrapper col-md-6">
@@ -34,8 +34,8 @@ const CountryList = () => {
             </div>
           </div>
         ) : (
-          <div className="empty">
-            <h4>Please enter Country Name and hit submit</h4>
+          <div className="empty text-center">
+            <h4>Please enter Country Name and hit Submit</h4>
           </div>
         )}
       </div>
