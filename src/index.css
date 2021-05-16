@@ -12,3 +12,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.country-form {
+  width: 50%;
+}
+
+.btn {
+  background-color: #094c8e;
+  border-color: #4c6180;
+}
+
+@media (max-width: 768px) {
+  .country-form {
+    width: 75%;
+  }
+}

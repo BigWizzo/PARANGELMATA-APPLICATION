@@ -18,23 +18,26 @@ const CountryList = () => {
   return (
     <div className="main">
       <h1 className="py-4">Parangelmata</h1>
+      <div className="icon">
+        <i className="fas fa-arrows-alt-h"></i>
+      </div>
       <CountryForm onSub={fetchData} />
-      <div className="content row m-0">
-        <div className="data-section col-6">
-          {state.loading && <p>Loading...</p>}
-          {state.data.labels.length > 0 ? (
-            <div className="chart-wrapper">
+      <div className="content">
+        {state.loading && <p>Loading...</p>}
+        {state.data.labels.length > 0 ? (
+          <div className="main-content-wrapper row m-0 p-3">
+            <div className="chart-wrapper col-md-6">
               <Bar data={state.data} />
             </div>
-          ) : (
-            <div className="empty">
-              <h4>'Please enter The country and click on submit'</h4>
+            <div className="country-desc col-md-6">
+              <CountryDescription desc={state.desc} trends={state.trends} />
             </div>
-          )}
-        </div>
-        <div className="country-desc col-6">
-          <CountryDescription desc={state.desc} trends={state.trends} />
-        </div>
+          </div>
+        ) : (
+          <div className="empty">
+            <h4>Please enter Country Name and hit submit</h4>
+          </div>
+        )}
       </div>
     </div>
   );
