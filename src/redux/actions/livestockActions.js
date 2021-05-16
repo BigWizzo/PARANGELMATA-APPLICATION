@@ -15,7 +15,7 @@ export const getData = ({ nation }) => {
 
       response.data.map((country) => {
         const currentCountry = country['Country Name'];
-        if (currentCountry === nation) {
+        if (currentCountry.toLowerCase() === nation.toLowerCase()) {
           Object.keys(country).forEach((key) => {
             myLabels.push(key);
           });

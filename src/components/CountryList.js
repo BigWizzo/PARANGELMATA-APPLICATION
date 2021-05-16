@@ -19,9 +19,6 @@ const CountryList = () => {
     <div className="main">
       <h1>Parangelmata</h1>
       <CountryForm onSub={fetchData} />
-      <div className="conunty-desc">
-        <CountryDescription desc={state.desc} trends={state.trends} />
-      </div>
       <div>
         {state.loading && <p>Loading...</p>}
         {state.data.labels.length > 0 ? (
@@ -33,6 +30,9 @@ const CountryList = () => {
             <h4>'Please enter The country and click on submit'</h4>
           </div>
         )}
+      </div>
+      <div className="country-desc">
+        <CountryDescription desc={state.desc} trends={state.trends} />
       </div>
     </div>
   );
