@@ -32,14 +32,42 @@ export const getData = ({ nation }) => {
       const indCode = myData.slice(64).toString();
       const indName = myData.slice(63).toString();
       const natCode = myData.slice(62).toString();
+      const yr1 = myLabels.slice(59, 60).toString();
+      const yr2 = myLabels.slice(60, 61).toString();
+      const yr1Val = myData.slice(59, 60).toString();
+      const yr2Val = myData.slice(60, 61).toString();
 
-      console.log(indCode);
-      console.log(indName);
-      console.log(natCode);
+      console.log(yr1);
+      console.log(yr2);
+      // console.log(natCode);
+
+      const status = () => {
+        if (yr1Val === yr2Val) {
+          return 'equal';
+        } else if (yr1Val < yr2Val) {
+          return 'dropping';
+        } else {
+          return 'up';
+        }
+      };
+
+      console.log(status());
 
       dispatch({
         type: 'SUCCESS_LIVESTOCK',
-        payload: { data, labels, label, indCode, indName, natCode },
+        payload: {
+          data,
+          labels,
+          label,
+          indCode,
+          indName,
+          natCode,
+          status,
+          yr1,
+          yr2,
+          yr1Val,
+          yr2Val,
+        },
       });
     } catch (error) {
       dispatch({

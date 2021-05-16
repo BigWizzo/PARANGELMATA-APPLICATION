@@ -1,13 +1,16 @@
-const CountryDescription = ({ desc }) => {
+const CountryDescription = ({ desc, trends }) => {
   const { countryCode, label } = desc;
+  const { yearOne, yearTwo, currentStatus } = trends;
   return (
     <>
       <div className="mb-3">
         <div className="row g-0">
           <div className="col-md-4">
-            <h4 className="card-header">Trend</h4>
+            <h4 className="card-header">{currentStatus}</h4>
             <div className="card-body">
-              <p>Dropping</p>
+              {console.log(label)}
+              <p>{yearOne}</p>
+              <p>{yearTwo}</p>
             </div>
           </div>
           <div className="col-md-8">

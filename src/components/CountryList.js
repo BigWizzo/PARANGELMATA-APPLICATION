@@ -21,7 +21,7 @@ const CountryList = () => {
       <h1>Parangelmata</h1>
       <CountryForm onSub={fetchData} />
       <div className="conunty-desc">
-        <CountryDescription desc={state.desc} />
+        <CountryDescription desc={state.desc} trends={state.trends} />
       </div>
       <div>
         {state.loading && <p>Loading...</p>}

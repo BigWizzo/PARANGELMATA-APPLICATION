@@ -17,6 +17,13 @@ const initialState = {
     indicatorName: '',
     countryCode: '',
   },
+  trends: {
+    yearOne: '',
+    yearTwo: '',
+    currentStatus: '',
+    yearOneVal: '',
+    yearTwoVal: '',
+  },
 };
 
 const livestockReducer = (state = initialState, action) => {
@@ -54,6 +61,13 @@ const livestockReducer = (state = initialState, action) => {
           indicatorCode: payload.indCode,
           indicatorName: payload.indName,
           countryCode: payload.natCode,
+        },
+        trends: {
+          yearOne: payload.yr1,
+          yearTwo: payload.yr2,
+          currentStatus: payload.status(),
+          yearOneVal: payload.yr1Val,
+          yearTwoVal: payload.yr2Val,
         },
       };
     default:
