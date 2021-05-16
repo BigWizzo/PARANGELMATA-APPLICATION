@@ -17,22 +17,24 @@ const CountryList = () => {
 
   return (
     <div className="main">
-      <h1>Parangelmata</h1>
+      <h1 className="py-4">Parangelmata</h1>
       <CountryForm onSub={fetchData} />
-      <div>
-        {state.loading && <p>Loading...</p>}
-        {state.data.labels.length > 0 ? (
-          <div className="chart-wrapper">
-            <Bar data={state.data} />
-          </div>
-        ) : (
-          <div className="empty">
-            <h4>'Please enter The country and click on submit'</h4>
-          </div>
-        )}
-      </div>
-      <div className="country-desc">
-        <CountryDescription desc={state.desc} trends={state.trends} />
+      <div className="content row m-0">
+        <div className="data-section col-6">
+          {state.loading && <p>Loading...</p>}
+          {state.data.labels.length > 0 ? (
+            <div className="chart-wrapper">
+              <Bar data={state.data} />
+            </div>
+          ) : (
+            <div className="empty">
+              <h4>'Please enter The country and click on submit'</h4>
+            </div>
+          )}
+        </div>
+        <div className="country-desc col-6">
+          <CountryDescription desc={state.desc} trends={state.trends} />
+        </div>
       </div>
     </div>
   );

@@ -1,9 +1,4 @@
-.Apppp {
-  text-align: center;
-  /* color: white; */
-  padding: 5rem;
-  min-height: 85vh;
-  background: linear-gradient(to bottom right, #525252ba, #080808d1),
-    url(./images/img10.jpg);
-  background-size: cover;
+.btn {
+  background-color: #094c8e;
+  border-color: #4c6180;
 }

@@ -17,7 +17,7 @@ const CountryForm = ({ onSub }) => {
 
   return (
     <>
-      <form className="country-form" onSubmit={onSubmit}>
+      <form className="country-form w-75 m-auto mb-5" onSubmit={onSubmit}>
         <div className="my-form mb-3">
           <input
             className="form-control"
@@ -30,10 +30,10 @@ const CountryForm = ({ onSub }) => {
             We'll never share your email with anyone else.
           </div>
         </div>
-        <div className="d-grid gap-2 d-md-block">
+        <div className="d-grid gap-2 d-block">
           <button
             type="submit"
-            className="btn btn-primary btn-dark"
+            className="btn btn-primary font-weight-bolder"
             value="Submit"
           >
             Submit
