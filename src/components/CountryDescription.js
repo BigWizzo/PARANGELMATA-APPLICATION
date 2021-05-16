@@ -7,10 +7,21 @@ const CountryDescription = ({ desc, trends }) => {
         <div className="row g-0">
           <div className="col-md-8">
             <div className="card-body">
-              <h5 className="card-title">{label}</h5>
-              <p className="card-text">{countryCode}</p>
               <p className="card-text">
-                <small className="text-muted">Last updated 3 mins ago</small>
+                Country Name:{' '}
+                <span className="card-title">{label.toUpperCase()}</span>
+              </p>
+              <p className="card-text">
+                Country Code: <span className="card-title">{countryCode}</span>
+              </p>
+              <h4>Description</h4>
+              <p className="card-text">
+                <small className="text-muted">
+                  Last updated 3 mins ago Last updated 3 mins ago Last updated 3
+                  mins ago Last updated 3 mins ago Last updated 3 mins ago Last
+                  updated 3 mins ago Last updated 3 mins ago Last updated 3 mins
+                  ago Last updated 3 mins ago Last updated 3 mins ago{' '}
+                </small>
               </p>
             </div>
           </div>

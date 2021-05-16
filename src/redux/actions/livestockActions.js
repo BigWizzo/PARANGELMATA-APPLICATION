@@ -29,8 +29,6 @@ export const getData = ({ nation }) => {
       const data = myData.slice(41, 61);
       const labels = myLabels.slice(41, 61);
       const label = countryLabel.toString();
-      const indCode = myData.slice(64).toString();
-      const indName = myData.slice(63, 64).toString();
       const natCode = myData.slice(62, 63).toString();
       const yr1 = myLabels.slice(59, 60).toString();
       const yr2 = myLabels.slice(60, 61).toString();
@@ -53,8 +51,6 @@ export const getData = ({ nation }) => {
           data,
           labels,
           label,
-          indCode,
-          indName,
           natCode,
           status,
           yr1,

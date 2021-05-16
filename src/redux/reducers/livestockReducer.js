@@ -13,8 +13,7 @@ const initialState = {
     ],
   },
   desc: {
-    indicatorCode: '',
-    indicatorName: '',
+    label: '',
     countryCode: '',
   },
   trends: {
@@ -58,8 +57,6 @@ const livestockReducer = (state = initialState, action) => {
         },
         desc: {
           label: payload.label,
-          indicatorCode: payload.indCode,
-          indicatorName: payload.indName,
           countryCode: payload.natCode,
         },
         trends: {
