@@ -1,9 +1,9 @@
 # PARANGELMATA APPLICATION
 
-> This Application visually displays livestock data per country using a bar gragh.
-> It makes use of Chartjs to show the last 20 years' data for each country.
+> This Application visually displays livestock data per country using a bar graph.
+> It makes use of Chartjs to show the last 20 years' data for each given country.
 > It also shows whether there has been an increase or decrease in the last two years.
-> A user types and submit a country name of intrest and a bar grapgh is presented with information about the country as well as the description and trend of the past two years.
+> A user types and submit a country name of interest and a bar graph is presented with information about the country as well as the description and trend of the past two years.
 
 ![ScreenShot](./screenshot.jpg)
 
