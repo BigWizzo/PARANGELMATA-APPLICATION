@@ -1,9 +1,9 @@
-import './App.css';
+import CountryList from './components/CountryList';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Parangelmata</h1>
+    <div className="App text-light">
+      <CountryList />
     </div>
   );
 }

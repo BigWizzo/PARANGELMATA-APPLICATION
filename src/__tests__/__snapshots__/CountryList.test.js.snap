@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the combined components to the App component 1`] = `
+<div
+  className="main"
+>
+  <h1
+    className="py-4 text-center"
+  >
+    Parangelmata
+  </h1>
+  <form
+    className="country-form m-auto mb-5"
+    onSubmit={[Function]}
+  >
+    <div
+      className="my-form mb-3"
+    >
+      <input
+        className="form-control"
+        onChange={[Function]}
+        placeholder="Enter Country"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="d-grid gap-2 d-block"
+    >
+      <button
+        className="btn btn-primary font-weight-bolder"
+        type="submit"
+        value="Submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+  <div
+    className="content"
+  >
+    <div
+      className="empty text-center"
+    >
+      <h4>
+        Please enter Country Name and hit Submit
+      </h4>
+    </div>
+  </div>
+  <div
+    class="circle-small-2 br-50 pos-abs"
+  />
+  <div
+    class="circle-small-4 br-50 pos-abs"
+  />
+  <div
+    class="circle-small-5 br-50 pos-abs"
+  />
+</div>
+`;
