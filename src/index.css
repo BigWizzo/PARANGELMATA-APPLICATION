@@ -40,7 +40,11 @@ code {
 }
 
 .card-hed {
-  font-style: font-italic;
+  font-style: italic;
+}
+
+.hr{
+  color: #820000;;
 }
 
 @media (max-width: 768px) {

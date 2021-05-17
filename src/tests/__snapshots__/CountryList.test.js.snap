@@ -7,10 +7,7 @@ exports[`should render the combined components to the App component 1`] = `
   <h1
     className="py-4 text-center"
   >
-    <span>
-      P
-    </span>
-    arangelmata
+    Parangelmata
   </h1>
   <form
     className="country-form m-auto mb-5"

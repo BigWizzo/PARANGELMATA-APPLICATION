@@ -6,8 +6,8 @@ const initialState = {
       {
         label: '',
         data: [],
-        backgroundColor: ['rgba(255, 99, 132, 0.2)'],
-        borderColor: ['rgba(255, 99, 132, 1)'],
+        backgroundColor: ['rgba(0, 128, 0, 0.5)'],
+        borderColor: ['rgb(0, 128, 0)'],
         borderWidth: 1,
       },
     ],
@@ -49,8 +49,8 @@ const livestockReducer = (state = initialState, action) => {
             {
               label: payload.label,
               data: payload.data,
-              backgroundColor: ['rgba(255, 99, 132, 0.2)'],
-              borderColor: ['rgba(255, 99, 132, 1)'],
+              backgroundColor: ['rgba(0, 128, 0, 0.5)'],
+              borderColor: ['rgb(0, 128, 0)'],
               borderWidth: 1,
             },
           ],
