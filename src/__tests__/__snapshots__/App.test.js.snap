@@ -50,6 +50,15 @@ exports[`should render the Parangelmata Application Page 1`] = `
         </h4>
       </div>
     </div>
+    <div
+      class="circle-small-2 br-50 pos-abs"
+    />
+    <div
+      class="circle-small-4 br-50 pos-abs"
+    />
+    <div
+      class="circle-small-5 br-50 pos-abs"
+    />
   </div>
 </div>
 `;
