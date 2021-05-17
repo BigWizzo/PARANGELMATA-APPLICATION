@@ -1,10 +1,15 @@
 /* eslint-disable array-callback-return */
 import axios from 'axios';
+import {
+  FETCH_COUNTRIES_REQUEST,
+  FETCH_COUNTRIES_SUCCESS,
+  FETCH_COUNTRIES_FAILURE,
+} from './actionTypes';
 export const getData = ({ nation }) => {
   return async (dispatch) => {
     try {
       dispatch({
-        type: 'AWAITING_LIVESTOCK',
+        type: FETCH_COUNTRIES_REQUEST,
       });
       const response = await axios.get(
         'https://anmlfarm.com/data/countrydata.json',
@@ -55,7 +60,7 @@ export const getData = ({ nation }) => {
       };
 
       dispatch({
-        type: 'SUCCESS_LIVESTOCK',
+        type: FETCH_COUNTRIES_SUCCESS,
         payload: {
           data,
           labels,
@@ -70,7 +75,7 @@ export const getData = ({ nation }) => {
       });
     } catch (error) {
       dispatch({
-        type: 'REJECTED_LIVESTOCK',
+        type: FETCH_COUNTRIES_FAILURE,
       });
     }
   };
