@@ -37,14 +37,12 @@ code {
 
 .btn:hover {
   background-color: #32ad32;
-  border-color: #03800d;
-
+  border-color: #01850c;
 }
 
 .btn:focus {
   background-color: #249624;
   border-color: #03800d;
-
 }
 
 .chart-wrapper {
@@ -55,8 +53,8 @@ code {
   font-style: italic;
 }
 
-hr{
-  background: red;;
+hr {
+  background: red;
 }
 
 .br-50 {

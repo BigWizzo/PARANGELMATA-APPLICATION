@@ -1,4 +1,3 @@
-/* eslint-disable array-callback-return */
 import axios from 'axios';
 import {
   FETCH_COUNTRIES_REQUEST,
@@ -19,7 +18,7 @@ export const getData = ({ nation }) => {
       const myData = [];
       const countryLabel = [];
 
-      response.data.map((country) => {
+      for (let country of response.data) {
         const currentCountry = country['Country Name'];
         if (currentCountry.toLowerCase() === nation.toLowerCase()) {
           Object.keys(country).forEach((key) => {
@@ -29,8 +28,9 @@ export const getData = ({ nation }) => {
             myData.push(value);
           });
           countryLabel.push(currentCountry);
+          console.log(country);
         }
-      });
+      }
 
       const data = myData.slice(41, 61);
       const labels = myLabels.slice(41, 61);
