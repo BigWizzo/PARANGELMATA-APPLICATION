@@ -13,17 +13,42 @@ code {
     monospace;
 }
 
+.font-10 {
+  font-size: 10px;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.green-800 {
+  font-weight: 800;
+  color: green;
+}
+
 .country-form {
   width: 50%;
 }
 
 .btn {
-  background-color: #094c8e;
+  background-color: #1a881a;
   border-color: #4c6180;
+}
+
+.chart-wrapper {
+  border-right: solid #820000;
+}
+
+.card-hed {
+  font-style: font-italic;
 }
 
 @media (max-width: 768px) {
   .country-form {
     width: 75%;
+  }
+
+  .chart-wrapper {
+    border: none;
   }
 }

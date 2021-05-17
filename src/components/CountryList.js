@@ -17,9 +17,7 @@ const CountryList = () => {
 
   return (
     <div className="main">
-      <h1 className="py-4 text-center">
-        <span>P</span>arangelmata
-      </h1>
+      <h1 className="py-4 text-center">Parangelmata</h1>
       <CountryForm onSub={fetchData} />
       <div className="content">
         {state.loading && <h4 className="text-center">Loading...</h4>}

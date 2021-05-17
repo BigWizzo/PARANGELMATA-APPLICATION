@@ -7,14 +7,17 @@ const CountryDescription = ({ desc, trends }) => {
         <div className="row g-0">
           <div className="col-md-8">
             <div className="card-body text-left">
-              <p className="card-text">
-                Country Name:{' '}
-                <span className="card-title">{label.toUpperCase()}</span>
+              <p className="country-wrap font-22">
+                <span>Country Name: </span>
+                <span className="country-code green-800 font-22">
+                  {label.toUpperCase()}
+                </span>
               </p>
               <p className="card-text">
-                Country Code: <span className="card-title">{countryCode}</span>
+                <span>Country Code: </span>
+                <span className="card-title">{countryCode}</span>
               </p>
-              <p className="card-text">
+              <p className="mute-p">
                 <small className="text-muted">
                   In the last two years, There has been {currentStatus} of
                   livestock production in {label}. The year {yearOne} had{' '}
@@ -24,23 +27,33 @@ const CountryDescription = ({ desc, trends }) => {
             </div>
           </div>
           <div className="col-md-4 text-center">
-            <h4 className="card-header">TRENDS</h4>
+            <h4 className="card-hed font-italic">TRENDS</h4>
+            <hr />
             <div className="card-body">
               <div>{yearOne}</div>
-              <div className="icon-div">
-                <div className="icon-span">
+              <div className="icon-div py-3">
+                <div className="icon-span ">
                   {yearTwoVal > yearOneVal ? (
-                    <span className="increase">
-                      Increase <i className="far fa-arrow-alt-circle-up"></i>
-                    </span>
+                    <div className="">
+                      <p className="m-0 font-10 text-success">Increase</p>
+                      <p className="increase m-0">
+                        <i className="far fa-arrow-alt-circle-up font-22 text-success"></i>
+                      </p>
+                    </div>
                   ) : yearTwoVal < yearOneVal ? (
-                    <span className="decrease">
-                      Decrease <i className="far fa-arrow-alt-circle-down"></i>
-                    </span>
+                    <div className="">
+                      <p className="m-0 font-10 text-danger">Decrease</p>
+                      <p className="decrease m-0">
+                        <i className="far fa-arrow-alt-circle-down font-22 text-danger"></i>
+                      </p>
+                    </div>
                   ) : (
-                    <span className="no-change">
-                      No Change <i className="fas fa-arrows-alt-h"></i>
-                    </span>
+                    <div>
+                      <p className="m-0 font-10 text-success">No Change</p>
+                      <p className="no-change m-0">
+                        <i className="fas fa-arrows-alt-h font-22"></i>
+                      </p>
+                    </div>
                   )}
                 </div>
               </div>
