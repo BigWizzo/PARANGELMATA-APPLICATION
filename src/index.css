@@ -32,7 +32,19 @@ code {
 
 .btn {
   background-color: #1a881a;
-  border-color: #4c6180;
+  border-color: #03800d;
+}
+
+.btn:hover {
+  background-color: #32ad32;
+  border-color: #03800d;
+
+}
+
+.btn:focus {
+  background-color: #249624;
+  border-color: #03800d;
+
 }
 
 .chart-wrapper {
