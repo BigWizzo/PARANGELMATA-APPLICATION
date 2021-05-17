@@ -14,7 +14,6 @@ const CountryDescription = ({ desc, trends }) => {
               <p className="card-text">
                 Country Code: <span className="card-title">{countryCode}</span>
               </p>
-              <h4>Description</h4>
               <p className="card-text">
                 <small className="text-muted">
                   In the last two years, There has been {currentStatus} of
