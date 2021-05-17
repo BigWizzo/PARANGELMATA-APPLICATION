@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/my-app/PARANGELMATA-APPLICATION/static/css/main.27c1ac8e.chunk.css",
-    "main.js": "/my-app/PARANGELMATA-APPLICATION/static/js/main.8a9bcde9.chunk.js",
-    "main.js.map": "/my-app/PARANGELMATA-APPLICATION/static/js/main.8a9bcde9.chunk.js.map",
-    "runtime-main.js": "/my-app/PARANGELMATA-APPLICATION/static/js/runtime-main.c0093bcb.js",
-    "runtime-main.js.map": "/my-app/PARANGELMATA-APPLICATION/static/js/runtime-main.c0093bcb.js.map",
-    "static/js/2.db377e05.chunk.js": "/my-app/PARANGELMATA-APPLICATION/static/js/2.db377e05.chunk.js",
-    "static/js/2.db377e05.chunk.js.map": "/my-app/PARANGELMATA-APPLICATION/static/js/2.db377e05.chunk.js.map",
-    "index.html": "/my-app/PARANGELMATA-APPLICATION/index.html",
-    "static/css/main.27c1ac8e.chunk.css.map": "/my-app/PARANGELMATA-APPLICATION/static/css/main.27c1ac8e.chunk.css.map",
-    "static/js/2.db377e05.chunk.js.LICENSE.txt": "/my-app/PARANGELMATA-APPLICATION/static/js/2.db377e05.chunk.js.LICENSE.txt"
+    "main.css": "/PARANGELMATA-APPLICATION/static/css/main.27c1ac8e.chunk.css",
+    "main.js": "/PARANGELMATA-APPLICATION/static/js/main.8a9bcde9.chunk.js",
+    "main.js.map": "/PARANGELMATA-APPLICATION/static/js/main.8a9bcde9.chunk.js.map",
+    "runtime-main.js": "/PARANGELMATA-APPLICATION/static/js/runtime-main.79fe77c2.js",
+    "runtime-main.js.map": "/PARANGELMATA-APPLICATION/static/js/runtime-main.79fe77c2.js.map",
+    "static/js/2.db377e05.chunk.js": "/PARANGELMATA-APPLICATION/static/js/2.db377e05.chunk.js",
+    "static/js/2.db377e05.chunk.js.map": "/PARANGELMATA-APPLICATION/static/js/2.db377e05.chunk.js.map",
+    "index.html": "/PARANGELMATA-APPLICATION/index.html",
+    "static/css/main.27c1ac8e.chunk.css.map": "/PARANGELMATA-APPLICATION/static/css/main.27c1ac8e.chunk.css.map",
+    "static/js/2.db377e05.chunk.js.LICENSE.txt": "/PARANGELMATA-APPLICATION/static/js/2.db377e05.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c0093bcb.js",
+    "static/js/runtime-main.79fe77c2.js",
     "static/js/2.db377e05.chunk.js",
     "static/css/main.27c1ac8e.chunk.css",
     "static/js/main.8a9bcde9.chunk.js"
