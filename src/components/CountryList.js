@@ -38,6 +38,9 @@ const CountryList = () => {
           </div>
         )}
       </div>
+      <div class="circle-small-2 br-50 pos-abs"></div>
+      <div class="circle-small-4 br-50 pos-abs"></div>
+      <div class="circle-small-5 br-50 pos-abs"></div>
     </div>
   );
 };
