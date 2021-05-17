@@ -28,7 +28,7 @@ const CountryDescription = ({ desc, trends }) => {
           </div>
           <div className="col-md-4 text-center">
             <h4 className="card-hed font-italic">TRENDS</h4>
-            <hr classname="hr" />
+            <hr />
             <div className="card-body">
               <div>{yearOne}</div>
               <div className="icon-div py-3">
