@@ -20,7 +20,7 @@ export const getData = ({ nation }) => {
 
       for (let country of response.data) {
         const currentCountry = country['Country Name'];
-        if (currentCountry.toLowerCase() === nation.toLowerCase()) {
+        if (currentCountry.toLowerCase() === nation.trim().toLowerCase()) {
           Object.keys(country).forEach((key) => {
             myLabels.push(key);
           });
@@ -28,7 +28,6 @@ export const getData = ({ nation }) => {
             myData.push(value);
           });
           countryLabel.push(currentCountry);
-          console.log(country);
         }
       }
 

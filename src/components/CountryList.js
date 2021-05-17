@@ -33,7 +33,9 @@ const CountryList = () => {
         ) : (
           <div className="empty text-center">
             {!state.loading && (
-              <h4>Please enter Country Name and hit Submit</h4>
+              <h4 className="no-entry p-3">
+                Please enter Country Name and hit Submit
+              </h4>
             )}
           </div>
         )}
