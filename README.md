@@ -1,7 +1,9 @@
 # PARANGELMATA APPLICATION
 
-> This Application visualy displays livestock data per country using a gragh.
-> It shows the 20 years' data for each country. It also shows whether there has been an increase or a decrease in the last two years
+> This Application visually displays livestock data per country using a bar gragh.
+> It makes use of Chartjs to show the last 20 years' data for each country.
+> It also shows whether there has been an increase or decrease in the last two years.
+> A user types and submit a country name of intrest and a bar grapgh is presented with information about the country as well as the description and trend of the past two years.
 
 ![ScreenShot](./screenshot.jpg)
 
@@ -9,6 +11,7 @@
 
 - React
 - Redux
+- Chartjs
 - Axios
 - Persist
 - Bootstrap
@@ -19,13 +22,14 @@
 - Jest
 - react-testing-library
 
-## Live Demo
+## Check the Live Version
 
 Open [Live Version Link](https://bigwizzo.github.io/PARANGELMATA-APPLICATION/)
 
 ### Prerequisites
 
-- Yarn
+- React
+- Yarn / npm
 - Text Editor
 
 ## Getting Started
@@ -44,8 +48,6 @@ To get a local copy up and running follow these simple example steps.
 ### Run Tests
 
 - run `npm run test`
-
-### Deployment
 
 ## Authors
 

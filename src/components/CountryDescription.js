@@ -19,9 +19,9 @@ const CountryDescription = ({ desc, trends }) => {
               </p>
               <p className="mute-p">
                 <small className="text-muted">
-                  In the last two years, There has been {currentStatus} of
-                  livestock production in {label}. The year {yearOne} had{' '}
-                  {yearOneVal} index and {yearTwo} had {yearTwoVal} index.
+                  In the last two years, There has been {currentStatus} in
+                  livestock production in {label}. The year {yearOne} has{' '}
+                  {yearOneVal} index and {yearTwo} has {yearTwoVal} index.
                 </small>
               </p>
             </div>
