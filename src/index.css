@@ -43,8 +43,8 @@ code {
   font-style: italic;
 }
 
-.hr{
-  color: #820000;;
+hr{
+  background: red;;
 }
 
 @media (max-width: 768px) {

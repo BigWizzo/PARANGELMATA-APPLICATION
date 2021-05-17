@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import axios from 'axios';
 export const getData = ({ nation }) => {
   return async (dispatch) => {
