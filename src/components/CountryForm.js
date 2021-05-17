@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 
 const CountryForm = ({ onSub }) => {
@@ -36,6 +37,10 @@ const CountryForm = ({ onSub }) => {
       </form>
     </>
   );
+};
+
+CountryForm.propTypes = {
+  onSub: PropTypes.func.isRequired,
 };
 
 export default CountryForm;
