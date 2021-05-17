@@ -44,9 +44,6 @@ export const getData = ({ nation }) => {
         yr2Val = 'no recorded';
       }
 
-      console.log(yr1Val);
-      console.log(yr2Val);
-
       const status = () => {
         if (yr1Val === yr2Val) {
           return 'no change';

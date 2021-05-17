@@ -1,6 +1,6 @@
 import { Bar } from 'react-chartjs-2';
 import { useDispatch, useSelector } from 'react-redux';
-import { getData } from '../redux/actions/livestockActions';
+import { getData } from '../redux/actions/countryActions';
 import CountryForm from './CountryForm';
 import CountryDescription from './CountryDescription';
 

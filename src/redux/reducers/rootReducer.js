@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import livestockReducer from './livestockReducer';
+import countryReducer from './countryReducer';
 
 const rootReducer = combineReducers({
-  livestock: livestockReducer,
+  livestock: countryReducer,
 });
 
 export default rootReducer;

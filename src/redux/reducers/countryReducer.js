@@ -25,7 +25,7 @@ const initialState = {
   },
 };
 
-const livestockReducer = (state = initialState, action) => {
+const countryReducer = (state = initialState, action) => {
   const { type, payload } = action;
 
   switch (type) {
@@ -73,4 +73,4 @@ const livestockReducer = (state = initialState, action) => {
   return state;
 };
 
-export default livestockReducer;
+export default countryReducer;
