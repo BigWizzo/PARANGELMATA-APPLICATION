@@ -21,7 +21,7 @@
 
 ## Live Demo
 
-Open [Live Version Link]()
+Open [Live Version Link](https://bigwizzo.github.io/PARANGELMATA-APPLICATION/)
 
 ### Prerequisites
 
@@ -35,7 +35,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Open the console
-- Download or git clone https://github.com/BigWizzo/PARANGELMATA-APPLICATION.git
+- Download or `git clone https://github.com/BigWizzo/PARANGELMATA-APPLICATION.git`
 - cd PARANGELMATA-APPLICATION
 - run `npm install`
 - run `npm start`
@@ -59,7 +59,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/BigWizzo/RoR-Capstone/issues).
+Feel free to check the [issues page](https://github.com/BigWizzo/PARANGELMATA-APPLICATION/issues).
 
 ## Show your support
 
