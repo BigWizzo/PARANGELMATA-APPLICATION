@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PARANGELMATA-APPLICATION/static/css/main.cf8244aa.chunk.css",
-    "main.js": "/PARANGELMATA-APPLICATION/static/js/main.f0b7aee0.chunk.js",
-    "main.js.map": "/PARANGELMATA-APPLICATION/static/js/main.f0b7aee0.chunk.js.map",
+    "main.js": "/PARANGELMATA-APPLICATION/static/js/main.41584127.chunk.js",
+    "main.js.map": "/PARANGELMATA-APPLICATION/static/js/main.41584127.chunk.js.map",
     "runtime-main.js": "/PARANGELMATA-APPLICATION/static/js/runtime-main.79fe77c2.js",
     "runtime-main.js.map": "/PARANGELMATA-APPLICATION/static/js/runtime-main.79fe77c2.js.map",
     "static/js/2.4cf9e420.chunk.js": "/PARANGELMATA-APPLICATION/static/js/2.4cf9e420.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.79fe77c2.js",
     "static/js/2.4cf9e420.chunk.js",
     "static/css/main.cf8244aa.chunk.css",
-    "static/js/main.f0b7aee0.chunk.js"
+    "static/js/main.41584127.chunk.js"
   ]
 }
