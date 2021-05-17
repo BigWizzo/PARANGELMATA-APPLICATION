@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the submit form to the App DOM 1`] = `
+<form
+  className="country-form m-auto mb-5"
+  onSubmit={[Function]}
+>
+  <div
+    className="my-form mb-3"
+  >
+    <input
+      className="form-control"
+      onChange={[Function]}
+      placeholder="Enter Country"
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    className="d-grid gap-2 d-block"
+  >
+    <button
+      className="btn btn-primary font-weight-bolder"
+      type="submit"
+      value="Submit"
+    >
+      Submit
+    </button>
+  </div>
+</form>
+`;
