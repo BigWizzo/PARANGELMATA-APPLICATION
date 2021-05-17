@@ -2,7 +2,7 @@
   "name": "parangelmata-application",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bigwizzo.github.io/my-app/PARANGELMATA-APPLICATION",
+  "homepage": "https://bigwizzo.github.io/PARANGELMATA-APPLICATION",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@testing-library/jest-dom": "^5.11.4",
